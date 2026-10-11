@@ -1,0 +1,286 @@
+{
+  "exportFormatVersion": 2,
+  "exportTime": "2026-10-11 13:55:00",
+  "containerVersion": {
+    "path": "accounts/6381880316/containers/266775896/versions/0",
+    "accountId": "6381880316",
+    "containerId": "266775896",
+    "containerVersionId": "0",
+    "name": "AURA Ecommerce GA4 Tracking",
+    "container": {
+      "path": "accounts/6381880316/containers/266775896",
+      "accountId": "6381880316",
+      "containerId": "266775896",
+      "name": "AURA Ecommerce",
+      "publicId": "GTM-5NVCVF96",
+      "usageContext": ["WEB"]
+    },
+    "tag": [
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "tagId": "1",
+        "name": "Google Tag - GA4 Configuration",
+        "type": "googtag",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "tagId", "value": "{{Constant - GA4 Measurement ID}}" },
+          { "type": "BOOLEAN", "key": "send_page_view", "value": "true" }
+        ],
+        "firingTriggerId": ["2147479553"]
+      },
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "tagId": "2",
+        "name": "GA4 Event - view_item_list",
+        "type": "gaawe",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "eventName", "value": "view_item_list" },
+          { "type": "TEMPLATE", "key": "measurementId", "value": "{{Constant - GA4 Measurement ID}}" },
+          { "type": "BOOLEAN", "key": "sendEcommerceData", "value": "true" }
+        ],
+        "firingTriggerId": ["101"]
+      },
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "tagId": "3",
+        "name": "GA4 Event - select_item",
+        "type": "gaawe",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "eventName", "value": "select_item" },
+          { "type": "TEMPLATE", "key": "measurementId", "value": "{{Constant - GA4 Measurement ID}}" },
+          { "type": "BOOLEAN", "key": "sendEcommerceData", "value": "true" }
+        ],
+        "firingTriggerId": ["102"]
+      },
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "tagId": "4",
+        "name": "GA4 Event - view_item",
+        "type": "gaawe",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "eventName", "value": "view_item" },
+          { "type": "TEMPLATE", "key": "measurementId", "value": "{{Constant - GA4 Measurement ID}}" },
+          { "type": "BOOLEAN", "key": "sendEcommerceData", "value": "true" }
+        ],
+        "firingTriggerId": ["103"]
+      },
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "tagId": "5",
+        "name": "GA4 Event - add_to_cart",
+        "type": "gaawe",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "eventName", "value": "add_to_cart" },
+          { "type": "TEMPLATE", "key": "measurementId", "value": "{{Constant - GA4 Measurement ID}}" },
+          { "type": "BOOLEAN", "key": "sendEcommerceData", "value": "true" }
+        ],
+        "firingTriggerId": ["104"]
+      },
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "tagId": "6",
+        "name": "GA4 Event - remove_from_cart",
+        "type": "gaawe",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "eventName", "value": "remove_from_cart" },
+          { "type": "TEMPLATE", "key": "measurementId", "value": "{{Constant - GA4 Measurement ID}}" },
+          { "type": "BOOLEAN", "key": "sendEcommerceData", "value": "true" }
+        ],
+        "firingTriggerId": ["105"]
+      },
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "tagId": "7",
+        "name": "GA4 Event - view_cart",
+        "type": "gaawe",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "eventName", "value": "view_cart" },
+          { "type": "TEMPLATE", "key": "measurementId", "value": "{{Constant - GA4 Measurement ID}}" },
+          { "type": "BOOLEAN", "key": "sendEcommerceData", "value": "true" }
+        ],
+        "firingTriggerId": ["106"]
+      },
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "tagId": "8",
+        "name": "GA4 Event - begin_checkout",
+        "type": "gaawe",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "eventName", "value": "begin_checkout" },
+          { "type": "TEMPLATE", "key": "measurementId", "value": "{{Constant - GA4 Measurement ID}}" },
+          { "type": "BOOLEAN", "key": "sendEcommerceData", "value": "true" }
+        ],
+        "firingTriggerId": ["107"]
+      },
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "tagId": "9",
+        "name": "GA4 Event - purchase",
+        "type": "gaawe",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "eventName", "value": "purchase" },
+          { "type": "TEMPLATE", "key": "measurementId", "value": "{{Constant - GA4 Measurement ID}}" },
+          { "type": "BOOLEAN", "key": "sendEcommerceData", "value": "true" }
+        ],
+        "firingTriggerId": ["110"]
+      }
+    ],
+    "trigger": [
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "triggerId": "2147479553",
+        "name": "All Pages",
+        "type": "PAGEVIEW"
+      },
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "triggerId": "101",
+        "name": "Event - view_item_list",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{_event}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "view_item_list" }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "triggerId": "102",
+        "name": "Event - select_item",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{_event}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "select_item" }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "triggerId": "103",
+        "name": "Event - view_item",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{_event}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "view_item" }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "triggerId": "104",
+        "name": "Event - add_to_cart",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{_event}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "add_to_cart" }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "triggerId": "105",
+        "name": "Event - remove_from_cart",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{_event}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "remove_from_cart" }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "triggerId": "106",
+        "name": "Event - view_cart",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{_event}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "view_cart" }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "triggerId": "107",
+        "name": "Event - begin_checkout",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{_event}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "begin_checkout" }
+            ]
+          }
+        ]
+      },
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "triggerId": "110",
+        "name": "Event - purchase",
+        "type": "CUSTOM_EVENT",
+        "customEventFilter": [
+          {
+            "type": "EQUALS",
+            "parameter": [
+              { "type": "TEMPLATE", "key": "arg0", "value": "{{_event}}" },
+              { "type": "TEMPLATE", "key": "arg1", "value": "purchase" }
+            ]
+          }
+        ]
+      }
+    ],
+    "variable": [
+      {
+        "accountId": "6381880316",
+        "containerId": "266775896",
+        "variableId": "1",
+        "name": "Constant - GA4 Measurement ID",
+        "type": "c",
+        "parameter": [
+          { "type": "TEMPLATE", "key": "value", "value": "G-AURA99TEST" }
+        ]
+      }
+    ]
+  }
+}

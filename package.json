@@ -1,0 +1,30 @@
+{
+  "name": "ecomers-platform",
+  "version": "1.0.0",
+  "description": "Fullstack Modern E-commerce Platform with GA4 & GTM Tracking",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "client": "npm --prefix frontend run dev",
+    "server": "npm --prefix backend run start",
+    "seed": "npm --prefix backend run seed",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "test": "node tests/validate_telemetry_and_api.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "react",
+    "vite",
+    "tailwind",
+    "express",
+    "mongodb",
+    "mongoose",
+    "jwt",
+    "gtm",
+    "ga4"
+  ],
+  "author": "",
+  "license": "ISC"
+}

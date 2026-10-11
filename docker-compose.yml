@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aura-ecommerce-app
+    restart: always
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://mongo:27017/aura_ecommerce
+      - JWT_SECRET=aura_production_jwt_secret_key_2026
+      - ADMIN_EMAIL=admin@aura.store
+      - ADMIN_PASSWORD=Admin@123456
+      - VITE_GTM_ID=GTM-5NVCVF96
+      - VITE_GA4_MEASUREMENT_ID=G-AURA99TEST
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    container_name: aura-ecommerce-mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:
